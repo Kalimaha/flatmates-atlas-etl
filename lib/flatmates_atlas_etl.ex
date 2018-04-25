@@ -1,4 +1,4 @@
-defmodule ElixirAtlasEtl do
+defmodule FlatmatesAtlasEtl do
   @base_url "https://search-elasticsearch-production-nbhi2yq5ffhqssgfvhgqwjdupy.ap-southeast-2.es.amazonaws.com/"
   @key_id System.get_env("AWS_ES_KEY_ID_PROD")
   @secret_access_key System.get_env("AWS_ES_SECRET_ACCESS_KEY_PROD")
@@ -17,11 +17,11 @@ defmodule ElixirAtlasEtl do
 
   defp headers(url) do
     AWSAuth.sign_authorization_header(
-      @key_id, 
-      @secret_access_key, 
-      @method, 
+      @key_id,
+      @secret_access_key,
+      @method,
       "#{@base_url}#{url}",
-      @region, 
+      @region,
       @service,
       Map.new |> Map.put("Content-Type", "application/json")
     )

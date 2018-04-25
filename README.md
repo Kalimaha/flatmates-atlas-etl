@@ -1,21 +1,21 @@
-# ElixirAtlasEtl
+# Flatmates Atlas ETL
 
-**TODO: Add description**
+Potential porting of the existing ETL from Ruby to Elixir.
 
-## Installation
+## Development
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `elixir_atlas_etl` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:elixir_atlas_etl, "~> 0.1.0"}
-  ]
-end
+### Install dependencies
+```
+mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/elixir_atlas_etl](https://hexdocs.pm/elixir_atlas_etl).
+### Setup
+This project requires you to set two variables in your environment:
 
+* `AWS_ES_SECRET_ACCESS_KEY`
+* `AWS_ES_SECRET_ACCESS_KEY_PROD`
+
+### Run tests
+```
+mix test
+```
