@@ -20,7 +20,8 @@ defmodule FlatmatesAtlasEtl.MixProject do
   defp deps do
     [
       { :httpoison, "~> 1.0" },
-      { :aws_auth, git: "https://github.com/bryanjos/aws_auth.git" }
+      { :aws_auth, git: "https://github.com/bryanjos/aws_auth.git" },
+      { :mock, "~> 0.3.0", only: :test }
     ]
   end
 end
