@@ -11,18 +11,18 @@ defmodule AtlasRepositoryTest do
 
   test "downloads remote zip file" do
     with_mocks([
-      { HTTPoison,  [], [get!: fn(_) -> { :ok, @atlas_response } end] },
+      { HTTPoison,  [], [get: fn(_) -> { :ok, @atlas_response } end] },
       { File,       [], [write: fn(_target, _content) -> :ok end] }
     ]) do
       AtlasRepository.download_archive()
 
-      assert called HTTPoison.get!(@atlas_zip_source)
+      assert called HTTPoison.get(@atlas_zip_source)
     end
   end
 
   test "write remote file to disk" do
     with_mocks([
-      { HTTPoison,  [], [get!: fn(_) -> { :ok, @atlas_response } end] },
+      { HTTPoison,  [], [get: fn(_) -> { :ok, @atlas_response } end] },
       { File,       [], [write: fn(_target, _content) -> :ok end] }
     ]) do
       AtlasRepository.download_archive()
@@ -33,7 +33,7 @@ defmodule AtlasRepositoryTest do
 
   describe "connection error" do
     test "forwards the error" do
-      with_mock HTTPoison, [get!: fn(_) -> { :error, @httpoison_error } end] do
+      with_mock HTTPoison, [get: fn(_) -> { :error, @httpoison_error } end] do
         assert AtlasRepository.download_archive() == { :error, @httpoison_error }
       end
     end
@@ -42,7 +42,7 @@ defmodule AtlasRepositoryTest do
   describe "disk error" do
     test "forwards the error" do
       with_mocks([
-        { HTTPoison,  [], [get!: fn(_) -> { :ok, @atlas_response } end] },
+        { HTTPoison,  [], [get: fn(_) -> { :ok, @atlas_response } end] },
         { File,       [], [write: fn(_target, _content) -> { :error, @disk_error } end] }
       ]) do
         assert AtlasRepository.download_archive() == { :error, @disk_error }

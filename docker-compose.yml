@@ -24,6 +24,15 @@ services:
       ELASTICSEARCH_BASE_URL: 'http://elasticsearch:9200/'
       ATLAS_ZIP_SOURCE: 'https://github.com/Kalimaha/flatmates-atlas-etl/blob/master/resources/surrounding_suburbs.zip?raw=true'
 
+  local:
+    extends:
+      service: base
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    environment:
+      ATLAS_ZIP_SOURCE: 'https://dl.dropboxusercontent.com/s/dttwl79iqvf6nks/surrounding_suburbs.zip?dl=0'
+
   elasticsearch:
     image: 'docker.elastic.co/elasticsearch/elasticsearch:5.5.1'
     environment:

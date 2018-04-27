@@ -21,7 +21,9 @@ defmodule FlatmatesAtlasEtl.MixProject do
     [
       { :httpoison, "~> 1.0" },
       { :aws_auth, git: "https://github.com/bryanjos/aws_auth.git" },
-      { :mock, "~> 0.3.0", only: :test }
+      { :mock, "~> 0.3.0", only: :test },
+      { :flow, "~> 0.13" },
+      { :csv, "~> 2.0.0" }
     ]
   end
 end
