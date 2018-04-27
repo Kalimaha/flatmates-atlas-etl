@@ -16,3 +16,6 @@ WORKDIR /app
 
 # Install dependencies
 RUN mix deps.get
+
+# Default command
+CMD "mix test"
