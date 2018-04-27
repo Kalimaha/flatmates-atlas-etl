@@ -2,13 +2,10 @@ version: '2.1'
 
 services:
 
-  base: &base
+  base:
     build: .
     volumes:
       - .:/app
-    depends_on:
-      elasticsearch:
-        condition: service_healthy
     environment:
       AWS_REGION: 'ap-southeast-2'
       AWS_SERVICE: 'es'
@@ -18,7 +15,11 @@ services:
       ATLAS_CSV_TARGET: '/tmp'
 
   test:
-    <<: *base
+    extends:
+      service: base
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
     environment:
       ELASTICSEARCH_BASE_URL: 'http://elasticsearch:9200/'
       ATLAS_ZIP_SOURCE: 'https://github.com/Kalimaha/flatmates-atlas-etl/blob/master/resources/surrounding_suburbs.zip?raw=true'

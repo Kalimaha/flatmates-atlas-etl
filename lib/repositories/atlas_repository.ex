@@ -6,7 +6,7 @@ defmodule AtlasRepository do
   def download_archive do
     with  { :ok, response } <- HTTPoison.get!(@atlas_zip_source),
           :ok               <- File.write(@atlas_zip_target, response.body) do
-      :ok
+      { :ok, @atlas_zip_target }
     else
       { :error, reason } -> { :error, reason }
     end

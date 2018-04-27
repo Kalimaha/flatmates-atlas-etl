@@ -1,0 +1,21 @@
+source_id,source_name,source_state,source_postcode,source_subtype,target_id,target_name,target_state,target_postcode,target_subtype
+18f71aad-d1d0-4e39-8475-c4af59fc7d07,Brayton,NSW,2579,suburb,00048103-7b87-4f2c-94ec-b307ac097967,Canyonleigh,NSW,2577,suburb
+309e3138-9c46-4e30-9d6c-fe9ca7ac4801,Bullio,NSW,2575,suburb,00048103-7b87-4f2c-94ec-b307ac097967,Canyonleigh,NSW,2577,suburb
+53997145-cf2c-48d7-bfc9-4236f8ec25bd,Penrose,NSW,2579,suburb,00048103-7b87-4f2c-94ec-b307ac097967,Canyonleigh,NSW,2577,suburb
+6233f02a-9d1f-4a01-873f-613eec951608,Bannaby,NSW,2580,suburb,00048103-7b87-4f2c-94ec-b307ac097967,Canyonleigh,NSW,2577,suburb
+68e0cee9-d1f4-4663-a617-51727ed4af30,Wingello,NSW,2579,suburb,00048103-7b87-4f2c-94ec-b307ac097967,Canyonleigh,NSW,2577,suburb
+6c02a99e-6632-4908-9dec-d4d59de5806f,Paddys River,NSW,2577,suburb,00048103-7b87-4f2c-94ec-b307ac097967,Canyonleigh,NSW,2577,suburb
+6c5fbbf0-06c6-461c-937c-f38426ef5b44,Sutton Forest,NSW,2577,suburb,00048103-7b87-4f2c-94ec-b307ac097967,Canyonleigh,NSW,2577,suburb
+c694006b-dd5b-4ffe-b627-4f821baca3cd,Belanglo,NSW,2577,suburb,00048103-7b87-4f2c-94ec-b307ac097967,Canyonleigh,NSW,2577,suburb
+d4524739-6f83-4340-a8e2-80d153a56f72,Greenwich Park,NSW,2580,suburb,00048103-7b87-4f2c-94ec-b307ac097967,Canyonleigh,NSW,2577,suburb
+de298cbd-7d3a-457c-bd89-fb5e58169c8d,Big Hill,NSW,2579,suburb,00048103-7b87-4f2c-94ec-b307ac097967,Canyonleigh,NSW,2577,suburb
+f3f449ee-ae26-4931-b980-2f2caf44379b,Joadja,NSW,2575,suburb,00048103-7b87-4f2c-94ec-b307ac097967,Canyonleigh,NSW,2577,suburb
+23cede95-ba88-419e-a588-3980e188abaa,Anderleigh,QLD,4570,suburb,0005074f-fe36-4502-be26-e39d314a66c5,Downsfield,QLD,4570,suburb
+270b7994-9e04-4df7-b561-89c832c5dd88,Ross Creek,QLD,4570,suburb,0005074f-fe36-4502-be26-e39d314a66c5,Downsfield,QLD,4570,suburb
+5e192c2a-24c4-4574-af0b-4aa671e1b8be,Toolara Forest,QLD,4570,suburb,0005074f-fe36-4502-be26-e39d314a66c5,Downsfield,QLD,4570,suburb
+62a5c040-fdf3-490a-a2e6-110f17736ad5,Neerdie,QLD,4570,suburb,0005074f-fe36-4502-be26-e39d314a66c5,Downsfield,QLD,4570,suburb
+86c33099-23aa-4833-8021-d3f5bf34bd57,North Deep Creek,QLD,4570,suburb,0005074f-fe36-4502-be26-e39d314a66c5,Downsfield,QLD,4570,suburb
+91851cca-dfed-453d-be0c-9b03899b1326,Kia Ora,QLD,4570,suburb,0005074f-fe36-4502-be26-e39d314a66c5,Downsfield,QLD,4570,suburb
+96f40dc9-041b-4dad-a4ff-64ac0a1d1a55,Gympie,QLD,4570,suburb,0005074f-fe36-4502-be26-e39d314a66c5,Downsfield,QLD,4570,suburb
+fce1403a-a79e-417e-b1c1-4d555a99036a,Goomboorian,QLD,4570,suburb,0005074f-fe36-4502-be26-e39d314a66c5,Downsfield,QLD,4570,suburb
+6b6f551e-5084-474d-899d-01a05d194119,Tantawangalo,NSW,2550,suburb,000aa113-5672-422f-b34b-a16ef94b85f3,Mogilla,NSW,2550,suburb

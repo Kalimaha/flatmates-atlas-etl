@@ -15,16 +15,16 @@ defmodule FlatmatesAtlasEtl do
     # IO.inspect get("_cat/indices?v")
   end
 
-  defp download do
-    { :ok, response } = HTTPoison.get(@atlas_zip_source)
-    File.write!(@atlas_zip_target, response.body)
-  end
+  # defp download do
+  #   { :ok, response } = HTTPoison.get(@atlas_zip_source)
+  #   File.write!(@atlas_zip_target, response.body)
+  # end
 
-  defp unzip do
-    @atlas_zip_target
-    |> String.to_char_list
-    |> :zip.extract(cwd: @atlas_csv_target)
-  end
+  # defp unzip do
+  #   @atlas_zip_target
+  #   |> String.to_char_list
+  #   |> :zip.extract(cwd: @atlas_csv_target)
+  # end
 
   defp get(url) do
     { :ok, result } = HTTPoison.get("#{@base_url}#{url}", headers(url), [])
